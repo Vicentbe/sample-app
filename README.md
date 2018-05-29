@@ -16,3 +16,8 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+```
+A valid Google Maps API Key is required for this example to work properly.
+```
