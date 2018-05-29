@@ -1,4 +1,4 @@
-# Sample App -SportPlacesAPI
+# Sample App -SportPlacesAPI and SportsAPI
  > This sample apps shows the google map with all the sport places where Ice Hockey can be practiced in Montreal.
  > Thanks to the Decathlon Sport places API(http://developers.decathlon.com/sportplaces/) and the Decathlon sports API (http://developers.decathlon.com/sportplaces/#sports)
 
