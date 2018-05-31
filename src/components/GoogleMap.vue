@@ -65,7 +65,7 @@ export default {
     axios.get(`https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175`)
     .then(response => {
       // JSON responses are automatically parsed.
-      this.sportPlaces = response.data.features
+      this.sportPlaces = response.data.data.features
     })
     .catch(e => {
       this.errors.push(e)
