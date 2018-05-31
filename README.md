@@ -20,4 +20,6 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 ```
 A valid Google Maps API Key is required for this example to work properly.
+
+Here's how to get an API Key: [Google Maps Docs](https://developers.google.com/maps/documentation/embed/get-api-key)
 ```
