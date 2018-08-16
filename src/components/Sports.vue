@@ -1,6 +1,6 @@
 // This component displays the Decathlon Sport list
 // Fetches the sports data from Decathlon Sports API
-// (https://sportplaces-api.herokuapp.com/api/v1/sports)
+// (https://sportplaces.api.decathlon.com/api/v1/sports)
 <template>
   <div>
     <p>Decathlon is making <b>{{sports.length}} sports</b> more accesible for you!!</p>
@@ -29,7 +29,7 @@ export default {
   },
 
   created() {
-    axios.get(`https://sportplaces-api.herokuapp.com/api/v1/sports`)
+    axios.get(`https://sportplaces.api.decathlon.com/api/v1/sports`)
     .then(response => {
       // JSON responses are automatically parsed.
       this.sports = response.data

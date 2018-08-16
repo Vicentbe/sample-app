@@ -62,7 +62,7 @@ export default {
     // Hardcoded for Ice Hockey places in Montreal to keep it simple
     // the query parameters (origin, radius and sports) should be dynamic,
     // based on users location and sport choice
-    axios.get(`https://sportplaces-api.herokuapp.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175`)
+    axios.get(`https://sportplaces.api.decathlon.com/api/v1/places?origin=-73.582,45.511&radius=99&sports=175`)
     .then(response => {
       // JSON responses are automatically parsed.
       this.sportPlaces = response.data.data.features
