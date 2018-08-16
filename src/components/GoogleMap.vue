@@ -6,9 +6,9 @@
   <div>
 
     <div>
-      <h2>Wanna play Ice Hockey today?</h2>
-      <p><i>Many places have already been added in Montreal!! Search and explore...</i></p>
-      <label>
+      <h2 class="main-heading-wrapper">Wanna play Ice Hockey today?</h2>
+      <p class="sub-heading-wrapper"><i>Many Ice Hockey places have already been added in Montreal!! Search and explore...</i></p>
+      <label class="label-wrapper">
         <!-- Autocompletes the location from Google Places -->
         <gmap-autocomplete
           @place_changed="setPlace">
@@ -116,3 +116,20 @@ export default {
   }
 };
 </script>
+
+<style>
+.main-heading-wrapper {
+  text-align: center;
+  color: #42a9f4;
+}
+
+.sub-heading-wrapper {
+  text-align: center;
+}
+
+.label-wrapper {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>

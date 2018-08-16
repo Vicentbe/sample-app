@@ -3,14 +3,14 @@
 // (https://sportplaces.api.decathlon.com/api/v1/sports)
 <template>
   <div>
-    <p>Decathlon is making <b>{{sports.length}} sports</b> more accesible for you!!</p>
-    <p><i>Here's the list of all the sports</i></p>
-    <ul>
+    <p class="accessible-sports">Decathlon is making <b>{{sports.length}} sports</b> more accesible for you!!</p>
+    <p class="list-of-sports-heading"><i>Here's the list of all the sports</i></p>
+    <div class="sports-list">
       <!-- Displays the sports list by looping over the sports array -->
-      <li v-for="sport in sports" v-bind:key="sport.id">
-        <p>{{sport.name}}</p>
-      </li>
-    </ul>
+      <div class="sports-item" v-for="sport in sports" v-bind:key="sport.id">
+        <p class="sport-name"><i>{{sport.name}}</i></p>
+      </div>
+    </div>
 
   </div>
 </template>
@@ -40,3 +40,36 @@ export default {
   }
 }
 </script>
+
+<style>
+.list-of-sports-heading {
+  text-align: center;
+}
+
+.accessible-sports {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #42a9f4;
+}
+
+.sports-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sports-item {
+  margin: 50px;
+  background-color: #42a9f4;
+  min-width: 150px;
+  color: white;
+}
+
+.sport-name {
+  max-width: 150px;
+  text-align: center;
+}
+
+</style>
