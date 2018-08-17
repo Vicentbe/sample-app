@@ -1,4 +1,4 @@
-// This component displays the Decathlon Sport list
+// This component displays the Decathlon Sports list
 // Fetches the sports data from Decathlon Sports API
 // (https://sportplaces.api.decathlon.com/api/v1/sports)
 <template>
